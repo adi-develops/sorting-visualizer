@@ -1,33 +1,36 @@
 body {
-    background-color: rgb(33, 31, 31);
+  background-color: rgb(33, 31, 31);
+}
+
+p {
+  color: white;
 }
 
 .heading {
-    color: white;
-    text-align: center;
-    margin-top: 1%;
+  color: white;
+  text-align: center;
+  margin-top: 1%;
 }
 
 nav {
-    display: flex;
-    margin-top: 2%;
+  display: flex;
+  margin-top: 2%;
 }
 
 .sort {
-    margin: 5px;
+  margin: 5px;
 }
 
 #graph {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .bar {
-    display: inline-block;
-    width: 6px;
-    background-color: rgb(209, 209, 17);
-    margin: 2px;
-    
+  display: inline-block;
+  width: 6px;
+  background-color: rgb(209, 209, 17);
+  margin: 2px;
 }
