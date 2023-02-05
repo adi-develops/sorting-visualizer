@@ -33,4 +33,5 @@ nav {
   width: 6px;
   background-color: rgb(209, 209, 17);
   margin: 2px;
+  transition: height 0.2s ease-in-out;
 }
