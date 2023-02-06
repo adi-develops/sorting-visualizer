@@ -31,9 +31,10 @@ async function merge(bars, mid, l, r) {
   for (let i = l, j = 0; i <= r; i++, j++) {
     bars[i].style.background = "red";
     await new Promise((resolve) =>
-          setTimeout(() => {
-            resolve();
-          }), 1000);
+      setTimeout(() => {
+        resolve();
+      }, delay)
+    );
     bars[i].style.height = aux[j];
     bars[i].style.background = "cyan";
   }
