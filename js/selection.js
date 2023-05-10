@@ -1,9 +1,3 @@
-function swap(e1, e2) {
-  let temp = e1.style.height;
-  e1.style.height = e2.style.height;
-  e2.style.height = temp;
-}
-
 async function selection_sort() {
   let bars = document.querySelectorAll(".bar");
   let min;

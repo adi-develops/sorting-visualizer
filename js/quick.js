@@ -14,14 +14,14 @@ async function partition(bars, low, high) {
   for (let j = low; j < high; j++) {
     if (parseInt(bars[j].style.height) < pivot) {
       i++;
-      await swap(bars, i, j);
+      await swap_quick(bars, i, j);
     }
   }
-  await swap(bars, i + 1, high);
+  await swap_quick(bars, i + 1, high);
   return i + 1;
 }
 
-async function swap(bars, i, j) {
+async function swap_quick(bars, i, j) {
   const temp = bars[i].style.height;
   bars[i].style.height = bars[j].style.height;
   bars[j].style.height = temp;
